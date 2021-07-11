@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+   
+<!--Head-->
+    <Head> 
+        <title> Reservia</title>
+    <!--Généralités feuille de styles-->
+        <link rel="stylesheet" href="styles.css">
+        <meta charset="utf-8">
+    <!--Icones-->
+        <script src="https://kit.fontawesome.com/4b8e44a3cb.js" crossorigin="anonymous"></script>
+    <!--Police-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;500&display=swap" rel="stylesheet">
+    <!--favicon-->
+        <link rel="icon" href="C:\cygwin64\home\ephem\Openclassrooms\5-la_maquette\images\Favicon.ico">
+    <!--Metatags-->
+        <meta name="Description de Reservia" content="Portail de reservation d'hébergements et d'activités à Marseille" />
+        <!-- Twitter Card data -->
+        <meta name="twitter:card" value="Portail de reservation d'hébergements et d'activités à Marseille">
+        <!-- Open Graph data -->
+        <meta property="og:title" content="Reservia" />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="http://www.example.com/" />
+        <meta property="og:image" content="http://example.com/image.jpg" />
+        <meta property="og:description" content="Portail de reservation d'hébergements et d'activités à Marseille" /> 
+    </Head>
+
+<!--Body-->
+<Body>
+        <!--Header-->
+        <header>
+            <img src="C:\cygwin64\home\ephem\Openclassrooms\5-la_maquette\images\logo\Reservia@3x.png" alt="logo Reservia">
+            <nav>
+                    <ul>
+                        <li><a href="#">Hébergements</a></li>
+                        <li><a href="#">Activités</a></li>
+                        <li><a href="#" style="color: #0065fc; font-weight: bold;">S'inscrire</a></li>
+                    </ul>
+            </nav>
+        </header>
+        <!--Main, trouvez votre hebergement-->
+    <main>
+        <H2>Trouvez votre hébergement pour des vacances de rêve</H2>
+        <p>En plein centre ville ou pleine nature</p>
+        <div class="recherche">
+            <i class="fas fa-map-marker-alt"></i>
+            <form method="post" action="traitement.php">
+            <input spellcheck="true" type="search" name= "Rechercher" placeholder="Marseille, France"> </form>
+            <button class="button" type="submit"> Rechercher </button>
+        </div>
+        <br>
+         <div class="container-filtres">
+            <h3>Filtres</h3>
+            
+           <div class="f"><div class="i-eco"><i class="fas fa-money-bill-wave"></i></div><div class="eco"><a href="#">Economique</a></div></div>
+           <div class="f"><div class="i-fam"><i class="fas fa-child"></i></div><div class="fam"><a href="#">Familial</a></div></div>
+           <div class="f"><div class="i-rom"><i class="fas fa-heart"></i></div><div class="rom"><a href="#"> Romantique</a></div></div>
+           <div class="f"><div class="i-ani"><i class="fas fa-dog"></i></div><div class="ani"><a href="#">Animaux autorisés</a></div></div>
+           
+        </div>
+        
+        <div class="container-info">
+            <i class="fas fa-info"></i><p>Plus de 500 logements sont disponibles dans cette ville</p>
+        </div>
+    </main>
+            <!--Article et aside-->
+    <div class="Hebergements">
+            <!--Article 1, hébergements à Mrs-->
+        <article>
+        <h2>Hébergements à Marseille</h2>
+        <div class="encarthebMrs">
+            <div class="Heb1">
+                <div class="ImageH1">
+                   <img src="C:\cygwin64\home\ephem\Openclassrooms\5-la_maquette\images\hebergements\3_medium/1-Auberge-de-la-cannebiere.jpg" alt="Auberge de la Cannebière">
+                </div>
+                <h4>Auberge de la Cannebière</h4>
+                <p>Nuit à partir de <b>25€</b></p>
+                <div class="classement">
+                    <div class="avecetoiles"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="sansetoile"><i class="fas fa-star"></i></div>
+               </div>
+            </div>
+            <div class="Heb1">
+                <div class="ImageH1">
+                    <img src="C:\cygwin64\home\ephem\Openclassrooms\5-la_maquette\images\hebergements\3_medium/2-hotel-du-port.jpg" alt="Hôtel du port">
+                 </div>
+                <h4>Hôtel du port</h4>
+                <p>Nuit à partir de <b>52€</b></p>
+                <div class="classement">
+                    <div class="avecetoiles"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                </div>
+            </div>
+            <div class="Heb1">
+                <div class="ImageH1">
+                    <img src="C:\cygwin64\home\ephem\Openclassrooms\5-la_maquette\images\hebergements\3_medium/3-hotel-les-mouettes.jpg" alt="Hôtel les mouettes">
+                 </div>
+                <h4>Hôtel Les mouettes</h4>
+                <p>Nuit à partir de <b>76€</b></p>
+                <div class="classement">
+                    <div class="avecetoiles"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="sansetoile"><i class="fas fa-star"></i></div>
+               </div>
+            </div>
+            <div class="Heb1">
+                <div class="ImageH1">
+                    <img src="C:\cygwin64\home\ephem\Openclassrooms\5-la_maquette\images\hebergements\3_medium/4-Hotel-de-la-mer.jpg" alt="Hôtel de la mer">
+                 </div>
+                <h4>Hôtel de la mer</h4>
+                <p>Nuit à partir de <b>46€</b></p>
+                <div class="classement">
+                    <div class="avecetoiles"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="sansetoile"><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+               </div>
+            </div>
+            <div class="Heb1">
+                <div class="ImageH1">
+                    <img src="C:\cygwin64\home\ephem\Openclassrooms\5-la_maquette\images\hebergements\3_medium/5-Auberge-le-panier.jpg" alt="Auberge le Panier">
+                </div>
+                <h4>Auberge Le Panier</h4>
+                <p>Nuit à partir de <b>23€</b></p>
+                <div class="classement">
+                    <div class="avecetoiles"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="sansetoile"><i class="fas fa-star"></i></div>
+               </div>
+            </div>
+            <div class="Heb1">
+                <div class="ImageH1">
+                    <img src="C:\cygwin64\home\ephem\Openclassrooms\5-la_maquette\images\hebergements\3_medium/6-Hotel-chez-Amina.jpg" alt="Hôtel chez Amina">
+                 </div>
+                <h4>Auberge chez Amina</h4>
+                <p>Nuit à partir de <b>96€</b></p>
+                <div class="classement">
+                    <div class="avecetoiles"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+               </div>
+            </div>
+        </div>
+        </article>
+
+            <!--Aside, les plus populaires-->
+        <aside>
+            <div class="encartlespop">
+                <div class="titrepop"><h2>Les plus populaires</h2><i class="fas fa-chart-line"></i></div>
+            </div>
+        </aside>
+    </div>
+            <!--Article 2, les activités-->
+    <section>
+        <H2>Activités à Marseille</H2>
+    </section>
+        
+</Body>
+    
+<!--Footer-->
+    <Footer>
+
+
+    </Footer>
+
+
+
+
+
+
+</html>
+
