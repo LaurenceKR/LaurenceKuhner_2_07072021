@@ -4,8 +4,12 @@
 * {
     font-family: 'Raleway', 'Courier New', Courier, monospace;
 }
+
 :root {
+    --colorBlack: #000000;
     --colorBlue: #0065FC;
+    --colorclearBlue: #DEEBFF;
+    --colorGrey: #F2F2F2;
 }
 
 /*body*/
@@ -38,7 +42,7 @@ header ul li a
 {
     padding: 50px;
     text-decoration: none;
-    color : black; 
+    color: var(--colorBlack);
     font-size: 1rem;
     font-weight: bold;
 }
@@ -60,7 +64,7 @@ main {
         /*Zone de recherche*/
 main i
 {
-    color:#0065FC ;
+    color: var(--colorBlue) ;
     font-size: large;
 }
 .recherche{ 
@@ -73,18 +77,17 @@ main i
     display: flex; 
     align-items: center;
     justify-content: center;
-    background-color: #f2f2f2;
-    color: black;
+    background-color: var(--colorGrey);
+    color: var(--colorBlue);
     height: 40px;
     width: 40px;
     border-radius: 15px 0 0 15px;
 }
 .recherche input{
-    border: solid #F2F2F2 0.1rem;
+    border: solid var(--colorGrey) 0.1rem;
     height: 40px;
     width: 250px;
-    color: black;
-    font-family: 'Raleway', sans-serif;
+    color: var(--colorBlack);
     font-size: 15px;
     font-weight: bold;
 }
@@ -98,7 +101,6 @@ main i
     border-radius: 0 15px 15px 0;
     border-style: none;
     color: white;
-    font-family: 'Raleway', sans-serif;
     font-size: 15px;
     font-weight: bold;
 }
@@ -235,6 +237,8 @@ article{
     padding: 2em 1em;
     border-radius: 15px ;
     width: 63%;
+    height: 630px;
+    
 }
 .encarthebMrs{
     display :flex;
@@ -246,30 +250,34 @@ article{
 .Heb1 {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     background-color: white;
     border-radius:15px;
     border :none;
     box-shadow:2px 2px 5px;
-    width:250px ;
-    height: 50%;
+    width:240px ;
+    height: 200px;
     margin: 10px 0px;
     padding: 5px;
 }
 
 .Heb1 img {
-background-color: red;
     border-radius:15px 15px 0 0; 
-    height: 200px;
-    width: 100%;
+    height: 115px;
+    width: 240px;
     object-fit: cover;
+}
+.textH1 {
+  height: 85px;
+  padding: 0px 5px;
+  line-height: 1px;
+  
 }
         /*Etoiles*/
 
-article .avecetoiles{
+.avecetoiles{
     color: #0065FC;
 }
-article .sansetoile{
+.sansetoile{
     color: #bdbdbd;
 }
 .classement{
@@ -281,6 +289,7 @@ article .sansetoile{
 aside{ 
     background:#F2F2F2;
     width: 30%;
+    height: 630px;
     flex-wrap: wrap;
     padding: 2em 1em;
     border-radius: 15px;
@@ -288,55 +297,193 @@ aside{
 
 .encartlespop{
     display:flex;
-    flex-wrap :wrap;
     align-items: center;
+    flex-wrap :wrap;
     flex-direction: column;
 }
-.titrepop {
+
+.titleAside{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px 0 0;
 }
-.titrepop i{
-    position: relative;
-    left: 70px;
-    top: 20px;
+.titleAside i {
+    font-size: 25px;
+}
+
+.Heb2 {
+    display: flex;
+    background-color: white;
+    border-radius:15px;
+    border :none;
+    box-shadow:2px 2px 5px;
+    width:345px ;
+    height: 145px;
+    margin: 10px 0px;
+    padding: 5px;
+}
+.Heb2 img {
+    border-radius:15px 0 0 15px; 
+    height: 100%;
+    width: 125px;
+    object-fit: cover;
+}
+
+.textH2 {
+    padding: 0px 30px 0px 10px;
 }
 /*article2*/
 section{
-background: forestgreen;
 padding: 2em 1em;
+width: 100%;
 
+}
+.activityContainer {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+width: 100%;
+height: 450px;
+}
+.highBlock {
+    width: 300px;
+    height: 450px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px ;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+.highBlock img{
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+.smallBlock {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+}
+.cardPomegues {
+    width: 300px;
+    height: 240px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px ;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+.cardPomegues img {
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+}
+.cardFrioul {
+    width: 300px;
+    height: 170px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px ;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+.cardFrioul img {
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+}
+.cardNotredame {
+    width: 300px;
+    height: 200px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px ;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+.cardNotredame img {
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.cardLongchamp {
+    width: 300px;
+    height: 210px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px ;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+.cardLongchamp img {
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+section h5 {
+    padding-left: 10px;
+   
+    
 }
 /*footer*/
 footer{
-    background: greenyellow;
+    background-color: #f2f2f2;
     padding: 2em 1em;
-    flex-wrap: wrap;
-
 }
+
+.footerContainer {
+      display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   width: 70%;
+}
+
+footer a {
+   text-decoration: none;
+   color: black;
+   font-size: small;
+}
+
 
 /*regles CSS pour tablettes ici*/
 /*les périphériques mobiles ne dépassent pas 480 px de large*/
 @media screen and (min-width: 681px) and (max-width: 1200px){
     article {
-        background-color: rgb(42, 65, 165);
+        background-color: blue;
+        width :100%;
     }
     .Hebergements{
         display: flex;
         flex-direction: column-reverse;
     }
-
+    aside {
+        background-color: blue;
+        width: 100%;
+    }
+    
 }
-
 /*regles CSS pour mobiles ici*/
-/*les périphériques mobiles ne dépassent pas 480 px de large*/
-@media screen and (max-width: 680px){
+@media screen and (max-width: 680px) {
     article {
-        background-color: brown;
+        background-color:indianred;
+        width :100%;
     }
     .Hebergements{
         display: flex;
         flex-direction: column-reverse;
     }
-
-}
+    aside {
+        background-color: indianred;
+        width: 100%;
+    }
+    }
