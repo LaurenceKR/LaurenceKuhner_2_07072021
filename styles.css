@@ -67,13 +67,13 @@ main i
     color: var(--colorBlue) ;
     font-size: large;
 }
-.recherche{ 
+.searchContainer{ 
     display:flex;
     flex-direction: row;
     align-items: center;
 
 }
-.recherche i {
+.searchContainer i {
     display: flex; 
     align-items: center;
     justify-content: center;
@@ -83,7 +83,7 @@ main i
     width: 40px;
     border-radius: 15px 0 0 15px;
 }
-.recherche input{
+.searchContainer input{
     border: solid var(--colorGrey) 0.1rem;
     height: 40px;
     width: 250px;
@@ -91,7 +91,7 @@ main i
     font-size: 15px;
     font-weight: bold;
 }
-.recherche button {
+.searchContainer button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -105,7 +105,7 @@ main i
     font-weight: bold;
 }
         /*Filtres*/
-.container-filtres{
+.filtersContainer{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -164,7 +164,7 @@ main i
     right: -57px;
 }
 
-.container-filtres i{
+.filtersContainer i{
     display: flex; 
     align-items:center;
     justify-content: center;
@@ -176,7 +176,7 @@ main i
 
 }
 
-.container-filtres a{
+.filtersContainer a{
     display: flex; 
     align-items: center;
     justify-content: center;
@@ -185,7 +185,6 @@ main i
     border : #f2f2f2 solid 0.1rem;
     border-radius: 0 30px 30px 0;
     background-color: white;
-    font-family: 'Raleway', sans-serif;
     font-size: 15px;
     text-decoration: none;
     font-weight: bold;
@@ -193,17 +192,18 @@ main i
     height: 38px;
 }
 
-.container-filtres a:hover{
-    color: #0065FC;
-    background-color: #DEEBFF;}
+.filtersContainer a:hover {
+    color: var(--colorBlue);
+    background-color: var(--colorclearBlue);
+}
 
         /*Info*/
-.container-info{
+.infoContainer{
    display: flex; 
    flex-direction:row;
    align-items:center;}
  
-.container-info i{
+.infoContainer i{
     display: flex; 
     align-items: center;
     justify-content: center;
@@ -212,7 +212,7 @@ main i
     height: 35px;
     width: 35px;
 }
-.container-info p{
+.infoContainer p{
     display: flex; 
     align-items: center;
     justify-content: center;
@@ -221,14 +221,13 @@ main i
 }
         
 /*article et aside*/
-.Hebergements{
+.hotelMainContainer{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     padding: 1em 1em;
 }
-
 
 /*article1*/
 article{
@@ -240,14 +239,14 @@ article{
     height: 630px;
     
 }
-.encarthebMrs{
+.accommodationMrs{
     display :flex;
     flex-wrap :wrap;
     justify-content: space-between;
     align-items: center;
     }
 
-.Heb1 {
+.card1 {
     display: flex;
     flex-direction: column;
     background-color: white;
@@ -260,7 +259,7 @@ article{
     padding: 5px;
 }
 
-.Heb1 img {
+.card1 img {
     border-radius:15px 15px 0 0; 
     height: 115px;
     width: 240px;
@@ -270,22 +269,30 @@ article{
   height: 85px;
   padding: 0px 5px;
   line-height: 1px;
-  
+}
+.card1 a {
+    text-decoration: none;
+    color: var(--colorBlack);
+}
+.linkMore a {
+    text-decoration: none;
+    color: var(--colorBlack);
+    font-size: 1rem;
+    font-weight: bold;
 }
         /*Etoiles*/
-
-.avecetoiles{
+.blueStars{
     color: #0065FC;
 }
-.sansetoile{
+.greyStars{
     color: #bdbdbd;
 }
-.classement{
+.hotelRating{
     display: flex;
     flex-direction: row;
 }
 
-/*aside*/
+/*aside, les plus populaires*/
 aside{ 
     background:#F2F2F2;
     width: 30%;
