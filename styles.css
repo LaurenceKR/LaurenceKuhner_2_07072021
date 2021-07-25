@@ -185,6 +185,7 @@ main i
     border : #f2f2f2 solid 0.1rem;
     border-radius: 0 30px 30px 0;
     background-color: white;
+    color: var(--colorBlack);
     font-size: 15px;
     text-decoration: none;
     font-weight: bold;
@@ -302,7 +303,7 @@ aside{
     border-radius: 15px;
 }
 
-.encartlespop{
+.popContainer{
     display:flex;
     align-items: center;
     flex-wrap :wrap;
@@ -341,19 +342,30 @@ aside{
 .textH2 {
     padding: 0px 30px 0px 10px;
 }
+
+.popContainer a {
+    text-decoration: none;
+    color: var(--colorBlack);
+}
+
 /*article2*/
 section{
 padding: 2em 1em;
 width: 100%;
-
 }
 .activityContainer {
 display: flex;
 flex-direction: row;
+flex-wrap: wrap;
 justify-content: space-between;
 width: 100%;
 height: 450px;
 }
+.activityContainer a {
+    text-decoration: none;
+    color: var(--colorBlack);
+}
+
 .highBlock {
     width: 300px;
     height: 450px;
@@ -362,6 +374,7 @@ height: 450px;
     display: flex;
     flex-direction: column;
     justify-content:center;
+    flex-wrap: wrap;
 }
 .highBlock img{
     border-radius: 15px 15px 0 0;
@@ -372,6 +385,7 @@ height: 450px;
 .smallBlock {
 display: flex;
 flex-direction: column;
+flex-wrap: wrap;
 justify-content: space-between;
 align-items: center;
 }
@@ -449,7 +463,7 @@ footer{
 }
 
 .footerContainer {
-      display: flex;
+    display: flex;
    flex-direction: row;
    justify-content: space-between;
    width: 70%;
@@ -469,7 +483,7 @@ footer a {
         background-color: blue;
         width :100%;
     }
-    .Hebergements{
+    .hotelMainContainer {
         display: flex;
         flex-direction: column-reverse;
     }
