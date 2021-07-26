@@ -28,43 +28,39 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 2rem 1rem;
-
 }
 
-header nav ul
-{
+header nav ul{
     display :flex;
     flex-wrap: wrap;
     align-items: center; 
     list-style-type: none;
 }
 
-header ul li a
-{
+header ul li a{
     padding: 50px;
     text-decoration: none;
     color: var(--colorBlack);
     font-size: 1rem;
     font-weight: bold;
 }
-header ul li a:hover
-{
+
+header ul li a:hover{
     color: var(--colorBlue);
     border-top-style : solid;
     border-width : 0.1rem; 
 }
 
-header img
-{
+header img{
     width: 160px;
 }
+
 /*Main*/
 main {
-    padding: 1rem 1rem;
+    margin: 1rem;
 }
         /*Zone de recherche*/
-main i
-{
+main i{
     color: var(--colorBlue) ;
     font-size: large;
 }
@@ -72,7 +68,6 @@ main i
     display:flex;
     flex-direction: row;
     align-items: center;
-
 }
 .searchContainer i {
     display: flex; 
@@ -238,6 +233,10 @@ article{
     border-radius: 15px ;
     width: 63%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     }
 
 .accommodationMrs{
@@ -246,7 +245,12 @@ article{
     justify-content: space-between;
     align-items: center;
     }
-
+.titleArticle {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    width: 100%;
+}
 .card1 {
     display: flex;
     flex-direction: column;
@@ -279,7 +283,14 @@ article{
     text-decoration: none;
     color: var(--colorBlack);
     font-size: 1rem;
-    font-weight: bold;
+    font-weight: bold;}
+
+.linkMore{
+    flex-direction: row;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
 }
         /*Etoiles*/
 .blueStars{
@@ -298,16 +309,23 @@ aside{
     background:#F2F2F2;
     width: 30%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
     padding: 2em 1em;
     border-radius: 15px;
 }
 
 .popContainer{
-    display:flex;
-    align-items: center;
+    display: flex;
+    align-items:center;
+    justify-content: center;
     flex-wrap :wrap;
     flex-direction: column;
+    border: solid;
+    width: 95%;
 }
 
 .titleAside{
@@ -315,14 +333,17 @@ aside{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px 0 0;
+    width: 90%;
+    border: solid;
 }
 .titleAside i {
     font-size: 25px;
 }
 
-.Heb2 {
+.card2 {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
     background-color: white;
     border-radius:15px;
     border :none;
@@ -332,7 +353,7 @@ aside{
     margin: 10px 0px;
     padding: 5px;
 }
-.Heb2 img {
+.card2 img {
     border-radius:15px 0 0 15px; 
     height: 100%;
     width: 125px;
@@ -341,6 +362,10 @@ aside{
 
 .textH2 {
     padding: 0px 30px 0px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    border: solid;
 }
 
 .popContainer a {
@@ -350,11 +375,12 @@ aside{
 
 /*article2*/
 section{
-padding: 2em 1em;
 width: 100%;
 }
+section h2{
+    margin: 1rem;
+}
 .activityContainer {
-
 display: flex;
 flex-direction: row;
 flex-wrap: wrap;
@@ -379,7 +405,14 @@ height: 100%;
     flex-wrap: wrap;
     margin: 1em;
 }
-.highBlock img{
+#cardPort img{
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+#cardParc img{
     border-radius: 15px 15px 0 0;
     width: 100%;
     height: 400px;
@@ -392,7 +425,7 @@ flex-wrap: wrap;
 justify-content: space-between;
 align-items: center;
 }
-.cardPomegues {
+#cardPomegues {
     width: 300px;
     height: 240px;
     border-radius: 15px;
@@ -402,13 +435,13 @@ align-items: center;
     justify-content:center;
     margin: 1em;
 }
-.cardPomegues img {
+#cardPomegues img {
     border-radius: 15px 15px 0 0;
     width: 100%;
     height: 190px;
     object-fit: cover;
 }
-.cardFrioul {
+#cardFrioul {
     width: 300px;
     height: 170px;
     border-radius: 15px;
@@ -418,13 +451,13 @@ align-items: center;
     justify-content:center;
     margin: 1em;
 }
-.cardFrioul img {
+#cardFrioul img {
     border-radius: 15px 15px 0 0;
     width: 100%;
     height: 120px;
     object-fit: cover;
 }
-.cardNotredame {
+#cardNotredame {
     width: 300px;
     height: 200px;
     border-radius: 15px;
@@ -434,14 +467,14 @@ align-items: center;
     justify-content:center;
     margin: 1em;
 }
-.cardNotredame img {
+#cardNotredame img {
     border-radius: 15px 15px 0 0;
     width: 100%;
     height: 150px;
     object-fit: cover;
 }
 
-.cardLongchamp {
+#cardLongchamp {
     width: 300px;
     height: 210px;
     border-radius: 15px;
@@ -451,7 +484,7 @@ align-items: center;
     justify-content:center;
     margin: 1em;
 }
-.cardLongchamp img {
+#cardLongchamp img {
     border-radius: 15px 15px 0 0;
     width: 100%;
     height: 160px;
@@ -459,9 +492,7 @@ align-items: center;
 }
 
 section h5 {
-    padding-left: 10px;
-   
-    
+    padding-left: 10px;   
 }
 /*footer*/
 footer{
@@ -485,7 +516,7 @@ footer a {
 
 /*regles CSS pour tablettes ici*/
 /*les périphériques mobiles ne dépassent pas 480 px de large*/
-@media screen and (min-width: 681px) and (max-width: 1200px){
+@media screen and (min-width: 576px) and (max-width: 992px){
     
     .hotelMainContainer {
         display: flex;
@@ -501,48 +532,88 @@ footer a {
         width :100%;
         margin:1em;
     }
-    
+    .activityContainer {
+        display: flex;
+        flex-direction: column;
+    }        
 }
 /*regles CSS pour mobiles ici*/
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 575px) {
  
+/*Partie Hébergement*/
     .hotelMainContainer {
         display: flex;
         flex-direction: column-reverse;
         justify-content:space-between;
         align-items: center;
     }
-    aside {
-        width: 100%;
-        margin: 1em;
-    }
+   
     article {
         width :100%;
         background-color: var(--colorWhite);
     }
+
+    .card1 {
+        width:100% ;
+        height: 200px;
+
+    }
+    .card1 img {
+        border-radius:15px 15px 0 0; 
+        height: 115px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    aside {
+        width: 100%;
+        margin: 1em;
+    }
+    .card2 {
+        width:100% ;
+        height: 145px;
+    }
+    .card2 img {
+        height: 100%;
+        width: 125px;
+    }
+    /*Partie Activités*/
     section{
         width: 100%;
-
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         background-color: violet;
         }
     .activityContainer{
         display: flex;
         flex-direction: column;
         justify-content: center;
-    background-color:yellow;
-    margin: 1rem 1rem 1rem 1rem;
+        align-items: center;
+        width: 95%;
+        background-color:yellow;
     }
+   
     .highBlock {
-        background-color: yellowgreen;
-        width: 100%;
-        height: 200px;
-        margin:0;
-        display: flex;
-        flex-direction: column;
+        width: 98%;
+        height: 25%;
+        align-items: center;
+        border: solid;
     }
-    .highBlock img{
+
+    .cardActivities {
+            width: 100%;
+            height: 200px;
+            margin:0;
+            border: solid;
+    }
+    .cardActivities img {
         width: 100%;
-        height:140px ;
+        height: 80% ;
         margin: 0;
+        }
+
+    
     }
-}
+    

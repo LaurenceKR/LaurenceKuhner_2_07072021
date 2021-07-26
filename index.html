@@ -7,6 +7,7 @@
     <!--Généralités feuille de styles-->
         <link rel="stylesheet" href="styles.css">
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--Icones-->
         <script src="https://kit.fontawesome.com/4b8e44a3cb.js" crossorigin="anonymous"></script>
     <!--favicon-->
@@ -63,7 +64,7 @@
         <div class="hotelMainContainer">
 <!--Article 1, hébergements à Mrs-->
         <article>
-            <div class="titleActivity"><h2 id="hebergement">Hébergements à Marseille</h2></div>
+            <div class="titleArticle"><h2 id="hebergement">Hébergements à Marseille</h2></div>
             <div class="accommodationMrs">
                 <div class="card1">
                     <a href="#">
@@ -165,7 +166,7 @@
             <div class="titleAside"><h2>Les plus populaires</h2><i class="fas fa-chart-line"></i></div>
             <div class="popContainer">
                 <a href="#">
-                    <div class="Heb2"> 
+                    <div class="card2"> 
                         <div class="ImageH2">
                             <img src="Images/img_small/S7-Hotel_le_soleil_du_matin.jpg" alt="Hôtel Le soleil du matin">
                         </div>
@@ -179,7 +180,7 @@
                     </div>
                 </a>
                 <a href="#">
-                    <div class="Heb2">
+                    <div class="card2">
                         <div class="ImageH2">
                             <img src="Images/img_small/S8-Au_coeur_de_leau.jpg" alt="Au coeur de l'eau Chambres d'hôtes">
                         </div>
@@ -194,7 +195,7 @@
                     </div>
                 </a>
                 <a href="#">
-                    <div class="Heb2">
+                    <div class="card2">
                         <div class="ImageH2">
                             <img src="Images/img_small/S9-Hotel_Tout_Bleu_et_blanc.jpg" alt="Hôtel Tout bleu et blanc">
                         </div>
@@ -218,19 +219,21 @@
                 <div class="activityContainer">
                     <div class="highBlock">
                         <a href="#">
-                            <img src="Images/img_medium/M10-Vieux-port.jpg" alt="Vieux Port">
-                            <h5>Vieux Port</h5>
+                            <div id="cardPort" class="cardActivities">
+                                <img src="Images/img_medium/M10-Vieux-port.jpg" alt="Vieux Port">
+                                <h5>Vieux Port</h5>
+                            </div>
                         </a>
                     </div>
                     <div class="smallBlock">
                         <a href="#">
-                            <div class="cardPomegues">
-                                <img src="Images/img_small/S11-Fort_de_pomegues.jpg" alt="Fort de Pomegues">
+                            <div id="cardPomegues" class="cardActivities">
+                                <img src="Images/img_medium/M11-Fort-de-pomegues.jpg" alt="Fort de Pomegues">
                                 <h5>Fort de Pomègues</h5>
                             </div>
                         </a>
                         <a href="#">
-                            <div class="cardFrioul">
+                            <div id="cardFrioul" class="cardActivities" >
                                 <img src="Images/img_small/S12-Iles_du_Frioul.jpg" alt="Iles du Frioul">
                                 <h5>Iles du Frioul</h5>
                             </div>
@@ -238,19 +241,21 @@
                     </div>
                     <div class="highBlock">
                         <a href="#">
-                            <img src="Images/img_medium/M13-Parc-national-des-calanques.jpg" alt="Parc National des Calanques">
-                            <h5>Parc National des Calanques</h5>
+                            <div id="cardParc" class="cardActivities">
+                                <img src="Images/img_medium/M13-Parc-national-des-calanques.jpg" alt="Parc National des Calanques">
+                                <h5>Parc National des Calanques</h5>
+                            </div>
                         </a>
                     </div>
                     <div class="smallBlock">
                         <a href="#">
-                            <div class="cardNotredame">
+                            <div id="cardNotredame" class="cardActivities">
                                 <img src="Images/img_small/S14-Notre_Dame_de_la_Garde.jpg" alt="Notre-Dame-de-la-Garde">
                                 <h5>Notre-Dame-de-la-Garde</h5>
                             </div>
                         </a>
                         <a href="#">
-                            <div class="cardLongchamp">
+                            <div id="cardLongchamp" class="cardActivities">
                                 <img src="Images/img_small/S15-Parc_Longchamp.jpg" alt="Parc Longchamp">
                                 <h5>Parc Longchamp</h5>
                             </div>
