@@ -18,18 +18,17 @@
 }
 
 /*body*/
-body{
+.mainContainer {
     margin: 0px;
     padding: 0px;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
 }
 
 /*Header*/
-header {
+.navContainer {
     display :flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
     padding: 2rem 1rem;
 }
@@ -40,23 +39,1184 @@ header nav ul{
     align-items: center; 
     list-style-type: none;
 }
+.link {
+    display:flex;
+    justify-content: flex-end;
+    width: 75%;
+}
 
-header ul li a{
-    padding: 50px;
+header a{
+    padding: 30px;
     text-decoration: none;
     color: var(--colorBlack);
-    font-size: 1rem;
     font-weight: bold;
 }
 
-header ul li a:hover{
+header a:hover{
     color: var(--colorBlue);
     border-top-style : solid;
-    border-width : 0.1rem; 
+    border-width : 0.1em; 
+}
+.logo{
+    width: 160px;
+}
+header img{
+    width: 100%;
 }
 
-header img{
+/*Main*/
+main {
+    margin: 1em;
+}
+        /*Zone de recherche*/
+main i{
+    color: var(--colorBlue) ;
+    font-size: large;
+}
+.searchContainer{ 
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+.searchContainer i {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    background-color: var(--colorGrey);
+    color: var(--colorBlue);
+    height: 40px;
+    width: 40px;
+    border-radius: 15px 0 0 15px;
+}
+.searchContainer input{
+    border: solid var(--colorGrey) 0.1rem;
+    height: 40px;
+    width: 250px;
+    color: var(--colorBlack);
+    font-size: 15px;
+    font-weight: bold;
+}
+.searchContainer button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 125px;
+    height: 40px;
+    background-color:#0065FC;;
+    border-radius: 0 15px 15px 0;
+    border-style: none;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+        /*Filtres*/
+.filtersContainer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.f{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.eco {
+    width: 180px;
+    margin: 20px;
+}
+
+.i-eco{
+    display: flex; 
+    align-items:center;
+    position: relative;
+    right: -57px;
+}
+.fam {
+    width: 140px;
+    margin: 20px;
+}
+
+.i-fam{
+    display: flex; 
+    align-items:center;
+    position: relative;
+    right: -57px;
+}
+
+.rom {
+    width: 180px;
+    margin: 20px;
+}
+
+.i-rom{
+    display: flex; 
+    align-items:center;
+    position: relative;
+    right: -57px;
+}
+.ani {
+    width: 220px;
+    margin: 20px;
+}
+
+.i-ani{
+    display: flex; 
+    align-items:center;
+    position: relative;
+    right: -57px;
+}
+
+.filtersContainer i{
+    display: flex; 
+    align-items:center;
+    justify-content: center;
+    border : solid 0.1rem none;
+    border-radius: 50px;
+    background-color: #DEEBFF ;
+    height: 40px;
+    width: 45px;
+}
+
+.filtersContainer a{
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    margin: 15px;
+    border : #f2f2f2 solid 0.1rem;
+    border-radius: 0 30px 30px 0;
+    background-color: white;
+    color: var(--colorBlack);
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right:10px ;
+    height: 38px;
+}
+
+.filtersContainer a:hover {
+    color: var(--colorBlue);
+    background-color: var(--colorclearBlue);
+}
+
+        /*Info*/
+.infoContainer{
+   display: flex; 
+   flex-direction:row;
+   align-items:center;}
+ 
+.infoContainer i{
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    border : solid 0.1rem #F2F2F2 ;
+    border-radius: 50px;
+    height: 35px;
+    width: 35px;
+}
+.infoContainer p{
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    margin: 15px;
+}
+        
+/*article et aside*/
+.hotelMainContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1em 1em;
+
+}
+
+/*article1*/
+article{
+    background:#F2F2F2;
+    flex-wrap: wrap;
+    padding: 2em 1em;
+    border-radius: 15px ;
+    width: 63%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+
+.accommodationMrs{
+    display :flex;
+    flex-wrap :wrap;
+    justify-content: space-between;
+    align-items: center;
+    }
+.titleArticle {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    width: 100%;
+}
+.card1 {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius:15px;
+    border :none;
+    box-shadow:2px 2px 5px;
+    width:240px ;
+    height: 200px;
+    margin: 10px 0px;
+    padding: 5px;
+}
+
+.card1 img {
+    border-radius:15px 15px 0 0; 
+    height: 115px;
+    width: 240px;
+    object-fit: cover;
+}
+.textH1 {
+  height: 85px;
+  padding: 0px 5px;
+  line-height: 1px;
+}
+.card1 a {
+    text-decoration: none;
+    color: var(--colorBlack);
+}
+.linkMore a {
+    text-decoration: none;
+    color: var(--colorBlack);
+    font-size: 1rem;
+    font-weight: bold;}
+
+.linkMore{
+    flex-direction: row;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+}
+        /*Etoiles*/
+.blueStars{
+    color: #0065FC;
+}
+.greyStars{
+    color: #bdbdbd;
+}
+.hotelRating{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+/*aside, les plus populaires*/
+aside{ 
+    background:#F2F2F2;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 32px 16px 32px 16px;
+    border-radius: 15px;
+}
+
+.popContainer{
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-wrap :wrap;
+    flex-direction: column;
+    padding-top: 10px;
+    height:508px;
+}
+
+.titleAside{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+.titleAside i {
+    font-size: 25px;
+}
+
+.card2 {
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    background-color: white;
+    border-radius:15px;
+    box-shadow:2px 2px 5px;
+    width: 100% ;
+    height: 145px;
+    margin-bottom: 10px;
+    padding: 3px 2px;
+}
+.card2 img {
+    border-radius:15px 0 0 15px; 
+    height: 100%;
+    width: 125px;
+    object-fit: cover;
+}
+
+.textH2 {
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    width: 190px;
+}
+.textH2 p {
+    padding-left: 20px;
+    margin: 0;
+}
+.textH2 h4 {
+    padding: 10px 0px 10px 20px;
+    margin: 0;
+}
+.textH2 .hotelRating{
+    padding-top: 42px;
+    padding-left: 20px;
+}
+.popContainer a {
+    text-decoration: none;
+    color: var(--colorBlack);
+}
+
+/*article2*/
+section{
+width: 100%;
+margin-bottom: 50px;
+margin-left: 1rem;
+}
+section h2{
+    margin: 1rem;
+}
+.activityContainer {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-between;
+align-items: center;
+width: 98%;
+height: 100%;
+}
+.activityContainer a {
+    text-decoration: none;
+    color: var(--colorBlack);
+}
+
+.highBlock {
+    width: 300px;
+    height: 450px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px ;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    flex-wrap: wrap;
+}
+#cardPort img{
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+    height: 410px;
+    object-fit: cover;
+}
+
+#cardParc img{
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+    height: 410px;
+    object-fit: cover;
+}
+.smallBlock {
+display: flex;
+flex-direction: column;
+height: 450px;
+width: 300px;
+flex-wrap: wrap;
+justify-content:space-between;
+}
+#cardPomegues {
+    width: 300px;
+    height: 240px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px ;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: flex-start;
+}
+#cardPomegues img {
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+#cardFrioul {
+    width: 300px;
+    height: 170px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start
+}
+
+#cardFrioul img {
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+}
+#cardNotredame {
+    width: 300px;
+    height: 200px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px ;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+#cardNotredame img {
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+#cardLongchamp {
+    width: 300px;
+    height: 210px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px ;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+#cardLongchamp img {
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+}
+
+section h4 {
+    padding: 0;
+    margin:0.7em 0 0.7em 1.3em;
+}
+/*footer*/
+footer{
+    background-color: #f2f2f2;
+    padding: 2em 1em;
+}
+
+.footerContainer {
+    display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   width: 70%;
+}
+
+footer a {
+   text-decoration: none;
+   color: black;
+   font-size: small;
+}
+
+
+/*regles CSS pour tablettes ici*/
+/*les périphériques mobiles ne dépassent pas 480 px de large*/
+@media screen and (min-width: 576px) and (max-width: 992px){
+    body {
+        background-color: orange;
+    }
+    /*.hotelMainContainer {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content:space-between;
+        align-items: center;
+    }
+    aside {
+        width: 100%;
+        margin: 1em;
+    }
+    article {
+        width :100%;
+        margin:1em;
+    }
+    .activityContainer {
+        display: flex;
+        flex-direction: column;
+    }        */
+    /*body*/
+
+/*************/
+/*Code tablet*/
+/*************/
+/*Header*/
+.navContainer {
+    display :flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 2rem 1rem;
+}
+
+header nav ul{
+    display :flex;
+    flex-wrap: wrap;
+    align-items: center; 
+    list-style-type: none;
+}
+.link {
+    display:flex;
+    justify-content: flex-end;
+    width: 50%;
+}
+
+header a{
+    padding: 15px;
+    text-decoration: none;
+    color: var(--colorBlack);
+    font-weight: bold;
+}
+
+header a:hover{
+    color: var(--colorBlue);
+    border-top-style : solid;
+    border-width : 0.1em; 
+}
+.logo{
     width: 160px;
+}
+header img{
+    width: 100%;
+}
+
+
+/*Main*/
+main {
+    margin: 1rem;
+}
+        /*Zone de recherche*/
+main i{
+    color: var(--colorBlue) ;
+    font-size: large;
+}
+.searchContainer{ 
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+.searchContainer i {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    background-color: var(--colorGrey);
+    color: var(--colorBlue);
+    height: 40px;
+    width: 40px;
+    border-radius: 15px 0 0 15px;
+}
+.searchContainer input{
+    border: solid var(--colorGrey) 0.1rem;
+    height: 40px;
+    width: 250px;
+    color: var(--colorBlack);
+    font-size: 15px;
+    font-weight: bold;
+}
+.searchContainer button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 125px;
+    height: 40px;
+    background-color:#0065FC;;
+    border-radius: 0 15px 15px 0;
+    border-style: none;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+        /*Filtres*/
+.filtersContainer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.f{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.eco {
+    width: 180px;
+    margin: 20px;
+}
+
+.i-eco{
+    display: flex; 
+    align-items:center;
+    position: relative;
+    right: -57px;
+}
+.fam {
+    width: 140px;
+    margin: 20px;
+}
+
+.i-fam{
+    display: flex; 
+    align-items:center;
+    position: relative;
+    right: -57px;
+}
+
+.rom {
+    width: 180px;
+    margin: 20px;
+}
+
+.i-rom{
+    display: flex; 
+    align-items:center;
+    position: relative;
+    right: -57px;
+}
+.ani {
+    width: 220px;
+    margin: 20px;
+}
+
+.i-ani{
+    display: flex; 
+    align-items:center;
+    position: relative;
+    right: -57px;
+}
+
+.filtersContainer i{
+    display: flex; 
+    align-items:center;
+    justify-content: center;
+    border : solid 0.1rem none;
+    border-radius: 50px;
+    background-color: #DEEBFF ;
+    height: 40px;
+    width: 45px;
+}
+
+.filtersContainer a{
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    margin: 15px;
+    border : #f2f2f2 solid 0.1rem;
+    border-radius: 0 30px 30px 0;
+    background-color: white;
+    color: var(--colorBlack);
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right:10px ;
+    height: 38px;
+}
+
+.filtersContainer a:hover {
+    color: var(--colorBlue);
+    background-color: var(--colorclearBlue);
+}
+
+        /*Info*/
+.infoContainer{
+   display: flex; 
+   flex-direction:row;
+   align-items:center;}
+ 
+.infoContainer i{
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    border : solid 0.1rem #F2F2F2 ;
+    border-radius: 50px;
+    height: 35px;
+    width: 35px;
+}
+.infoContainer p{
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    margin: 15px;
+}
+        
+/*article et aside*/
+.hotelMainContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1em 1em;
+
+}
+
+/*article1*/
+article{
+    background:#F2F2F2;
+    flex-wrap: wrap;
+    padding: 2em 1em;
+    border-radius: 15px ;
+    width: 63%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+
+.accommodationMrs{
+    display :flex;
+    flex-wrap :wrap;
+    justify-content: space-between;
+    align-items: center;
+    }
+.titleArticle {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    width: 100%;
+}
+.card1 {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius:15px;
+    border :none;
+    box-shadow:2px 2px 5px;
+    width:240px ;
+    height: 200px;
+    margin: 10px 0px;
+    padding: 5px;
+}
+
+.card1 img {
+    border-radius:15px 15px 0 0; 
+    height: 115px;
+    width: 240px;
+    object-fit: cover;
+}
+.textH1 {
+  height: 85px;
+  padding: 0px 5px;
+  line-height: 1px;
+}
+.card1 a {
+    text-decoration: none;
+    color: var(--colorBlack);
+}
+.linkMore a {
+    text-decoration: none;
+    color: var(--colorBlack);
+    font-size: 1rem;
+    font-weight: bold;}
+
+.linkMore{
+    flex-direction: row;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+}
+        /*Etoiles*/
+.blueStars{
+    color: #0065FC;
+}
+.greyStars{
+    color: #bdbdbd;
+}
+.hotelRating{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+/*aside, les plus populaires*/
+aside{ 
+    background:#F2F2F2;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 32px 16px 32px 16px;
+    border-radius: 15px;
+}
+
+.popContainer{
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-wrap :wrap;
+    flex-direction: column;
+    padding-top: 10px;
+    height:508px;
+}
+
+.titleAside{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+.titleAside i {
+    font-size: 25px;
+}
+
+.card2 {
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    background-color: white;
+    border-radius:15px;
+    box-shadow:2px 2px 5px;
+    width: 100% ;
+    height: 145px;
+    margin-bottom: 10px;
+    padding: 3px 2px;
+}
+.card2 img {
+    border-radius:15px 0 0 15px; 
+    height: 100%;
+    width: 125px;
+    object-fit: cover;
+}
+
+.textH2 {
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    width: 190px;
+}
+.textH2 p {
+    padding-left: 20px;
+    margin: 0;
+}
+.textH2 h4 {
+    padding: 10px 0px 10px 20px;
+    margin: 0;
+}
+.textH2 .hotelRating{
+    padding-top: 42px;
+    padding-left: 20px;
+}
+.popContainer a {
+    text-decoration: none;
+    color: var(--colorBlack);
+}
+
+/*article2*/
+section{
+width: 100%;
+margin-bottom: 50px;
+margin-left: 1rem;
+}
+section h2{
+    margin: 1rem;
+}
+.activityContainer {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-between;
+align-items: center;
+width: 98%;
+height: 100%;
+}
+.activityContainer a {
+    text-decoration: none;
+    color: var(--colorBlack);
+}
+
+.highBlock {
+    width: 300px;
+    height: 450px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px ;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    flex-wrap: wrap;
+}
+#cardPort img{
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+    height: 410px;
+    object-fit: cover;
+}
+
+#cardParc img{
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+    height: 410px;
+    object-fit: cover;
+}
+.smallBlock {
+display: flex;
+flex-direction: column;
+height: 450px;
+width: 300px;
+flex-wrap: wrap;
+justify-content:space-between;
+}
+#cardPomegues {
+    width: 300px;
+    height: 240px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px ;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: flex-start;
+}
+#cardPomegues img {
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+#cardFrioul {
+    width: 300px;
+    height: 170px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start
+}
+
+#cardFrioul img {
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+}
+#cardNotredame {
+    width: 300px;
+    height: 200px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px ;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+#cardNotredame img {
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+#cardLongchamp {
+    width: 300px;
+    height: 210px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px ;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+#cardLongchamp img {
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+}
+
+section h4 {
+    padding: 0;
+    margin:0.7em 0 0.7em 1.3em;
+}
+/*footer*/
+footer{
+    background-color: #f2f2f2;
+    padding: 2em 1em;
+}
+
+.footerContainer {
+    display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   width: 70%;
+}
+
+footer a {
+   text-decoration: none;
+   color: black;
+   font-size: small;
+}
+
+}
+/*regles CSS pour mobiles ici*/
+@media screen and (max-width: 575px) {
+ body {
+     background-color: greenyellow;
+ }
+ /*
+/*Partie Hébergement
+    .hotelMainContainer {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content:space-between;
+        align-items: center;
+    }
+   
+    article {
+        width :100%;
+        background-color: var(--colorWhite);
+    }
+
+    .card1 {
+        width:100% ;
+        height: 200px;
+
+    }
+    .card1 img {
+        border-radius:15px 15px 0 0; 
+        height: 115px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    aside {
+        width: 100%;
+        margin: 1em;
+    }
+    .card2 {
+        width:100% ;
+        height: 145px;
+    }
+    .card2 img {
+        height: 100%;
+        width: 125px;
+    }
+Partie Activités
+    section{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: violet;
+        }
+    .activityContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 95%;
+        background-color:yellow;
+    }
+   
+    .highBlock {
+        width: 98%;
+        height: 25%;
+        align-items: center;
+        border: solid;
+    }
+
+    .cardActivities {
+            width: 100%;
+            height: 200px;
+            margin:0;
+            border: solid;
+    }
+    .cardActivities img {
+        width: 100%;
+        height: 80% ;
+        margin: 0;
+        }
+*/
+/*************/
+/*Mobile*/
+/********/
+
+/*Header*/
+.navContainer {
+    display :flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+    background-color: palevioletred;
+}
+
+header nav ul{
+    display :flex;
+    flex-wrap: wrap;
+    width: 100% ;
+    list-style-type: none;
+    padding:0;
+    background-color: violet;
+}
+.link {
+    border: solid;
+    width: 100%;
+    order:3;
+}
+
+header a{
+    padding: 0;
+    text-decoration: none;
+    color: var(--colorBlack);
+    font-weight: bold;
+}
+
+header a:hover{
+    color: var(--colorBlue);
+    border-top-style: none;
+    border-bottom-style: solid;
+    border-width : 0.2em; 
+}
+.logo{
+    width: 160px;
+    order: 1;
+}
+header img{
+    width: 100%;
+}
+
+.navRegistration{
+    background-color: indigo;
+    order:2;
+}
+.navAccommodation{
+    background-color: lawngreen;
+    width: 50%;
+}
+.navActivities{
+    width: 50%;
+    background-color: yellow;
 }
 
 /*Main*/
@@ -530,107 +1690,5 @@ footer a {
    font-size: small;
 }
 
-
-/*regles CSS pour tablettes ici*/
-/*les périphériques mobiles ne dépassent pas 480 px de large*/
-@media screen and (min-width: 576px) and (max-width: 992px){
-    
-    .hotelMainContainer {
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content:space-between;
-        align-items: center;
-    }
-    aside {
-        width: 100%;
-        margin: 1em;
-    }
-    article {
-        width :100%;
-        margin:1em;
-    }
-    .activityContainer {
-        display: flex;
-        flex-direction: column;
-    }        
-}
-/*regles CSS pour mobiles ici*/
-@media screen and (max-width: 575px) {
- 
-/*Partie Hébergement*/
-    .hotelMainContainer {
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content:space-between;
-        align-items: center;
-    }
-   
-    article {
-        width :100%;
-        background-color: var(--colorWhite);
-    }
-
-    .card1 {
-        width:100% ;
-        height: 200px;
-
-    }
-    .card1 img {
-        border-radius:15px 15px 0 0; 
-        height: 115px;
-        width: 100%;
-        object-fit: cover;
-    }
-
-    aside {
-        width: 100%;
-        margin: 1em;
-    }
-    .card2 {
-        width:100% ;
-        height: 145px;
-    }
-    .card2 img {
-        height: 100%;
-        width: 125px;
-    }
-    /*Partie Activités*/
-    section{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: violet;
-        }
-    .activityContainer{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 95%;
-        background-color:yellow;
-    }
-   
-    .highBlock {
-        width: 98%;
-        height: 25%;
-        align-items: center;
-        border: solid;
-    }
-
-    .cardActivities {
-            width: 100%;
-            height: 200px;
-            margin:0;
-            border: solid;
-    }
-    .cardActivities img {
-        width: 100%;
-        height: 80% ;
-        margin: 0;
-        }
-
-    
     }
     
