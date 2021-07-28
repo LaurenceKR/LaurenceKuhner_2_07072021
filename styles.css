@@ -31,6 +31,7 @@
     flex-wrap: wrap;
     align-items: center;
     padding: 2rem 1rem;
+    width: auto;
 }
 
 header nav ul{
@@ -77,21 +78,26 @@ main i{
     display:flex;
     flex-direction: row;
     align-items: center;
+    width: 420px;
 }
-.searchContainer i {
+.searchContainer .mapLogo {
     display: flex; 
     align-items: center;
     justify-content: center;
     background-color: var(--colorGrey);
     color: var(--colorBlue);
     height: 40px;
-    width: 40px;
+    width: 10%;
     border-radius: 15px 0 0 15px;
 }
+.form{
+    width: 60%;
+}
+
 .searchContainer input{
     border: solid var(--colorGrey) 0.1rem;
     height: 40px;
-    width: 250px;
+    width: 100%;
     color: var(--colorBlack);
     font-size: 15px;
     font-weight: bold;
@@ -100,15 +106,19 @@ main i{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 125px;
+    width: 30%;
     height: 40px;
-    background-color:#0065FC;;
+    background-color:var(--colorBlue);
     border-radius: 0 15px 15px 0;
     border-style: none;
-    color: white;
+    color: var(--colorWhite);
     font-size: 15px;
     font-weight: bold;
 }
+.responsiveLogo button{
+    display: none;
+}
+
         /*Filtres*/
 .filtersContainer{
     display: flex;
@@ -538,7 +548,7 @@ footer a {
 
 /*regles CSS pour tablettes ici*/
 /*les périphériques mobiles ne dépassent pas 480 px de large*/
-@media screen and (min-width: 576px) and (max-width: 992px){
+@media screen and (min-width: 576px) and (max-width: 1024px){
     body {
         background-color: orange;
     }
@@ -567,10 +577,7 @@ footer a {
 /*************/
 /*Header*/
 .navContainer {
-    display :flex;
-    flex-wrap: wrap;
-    align-items: center;
-    padding: 2rem 1rem;
+   padding: 1rem;
 }
 
 header nav ul{
@@ -606,50 +613,7 @@ header img{
 
 
 /*Main*/
-main {
-    margin: 1rem;
-}
-        /*Zone de recherche*/
-main i{
-    color: var(--colorBlue) ;
-    font-size: large;
-}
-.searchContainer{ 
-    display:flex;
-    flex-direction: row;
-    align-items: center;
-}
-.searchContainer i {
-    display: flex; 
-    align-items: center;
-    justify-content: center;
-    background-color: var(--colorGrey);
-    color: var(--colorBlue);
-    height: 40px;
-    width: 40px;
-    border-radius: 15px 0 0 15px;
-}
-.searchContainer input{
-    border: solid var(--colorGrey) 0.1rem;
-    height: 40px;
-    width: 250px;
-    color: var(--colorBlack);
-    font-size: 15px;
-    font-weight: bold;
-}
-.searchContainer button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 125px;
-    height: 40px;
-    background-color:#0065FC;;
-    border-radius: 0 15px 15px 0;
-    border-style: none;
-    color: white;
-    font-size: 15px;
-    font-weight: bold;
-}
+
         /*Filtres*/
 .filtersContainer{
     display: flex;
@@ -1163,107 +1127,90 @@ Partie Activités
 
 /*Header*/
 .navContainer {
-    display :flex;
-    flex-wrap: wrap;
-    align-items: center;
     justify-content: space-between;
     padding: 1em;
-    background-color: palevioletred;
 }
 
 header nav ul{
-    display :flex;
-    flex-wrap: wrap;
     width: 100% ;
-    list-style-type: none;
     padding:0;
-    background-color: violet;
 }
 .link {
-    border: solid;
     width: 100%;
     order:3;
 }
 
-header a{
+.link a{
     padding: 0;
-    text-decoration: none;
-    color: var(--colorBlack);
-    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0 20px 0;
+    border-bottom: solid;
+    /**********prbleme de cascade border-color: var(--colorGrey);*/
 }
 
-header a:hover{
+.link a:hover{
     color: var(--colorBlue);
     border-top-style: none;
     border-bottom-style: solid;
     border-width : 0.2em; 
 }
-.logo{
-    width: 160px;
-    order: 1;
+.navRegistration a:hover{
+    border: none;
 }
-header img{
-    width: 100%;
+
+.logo{
+    width: 140px;
+    order: 1;
 }
 
 .navRegistration{
-    background-color: indigo;
     order:2;
 }
 .navAccommodation{
-    background-color: lawngreen;
     width: 50%;
 }
 .navActivities{
     width: 50%;
-    background-color: yellow;
 }
 
 /*Main*/
-main {
-    margin: 1rem;
-}
+
         /*Zone de recherche*/
-main i{
-    color: var(--colorBlue) ;
-    font-size: large;
-}
-.searchContainer{ 
-    display:flex;
-    flex-direction: row;
-    align-items: center;
-}
-.searchContainer i {
-    display: flex; 
-    align-items: center;
-    justify-content: center;
-    background-color: var(--colorGrey);
-    color: var(--colorBlue);
-    height: 40px;
-    width: 40px;
-    border-radius: 15px 0 0 15px;
-}
-.searchContainer input{
-    border: solid var(--colorGrey) 0.1rem;
-    height: 40px;
-    width: 250px;
-    color: var(--colorBlack);
-    font-size: 15px;
-    font-weight: bold;
+
+.searchContainer{
+    width: 300px;
 }
 .searchContainer button {
+    display: none;
+}
+.responsiveLogo{
+    width: 40px;
+}
+.searchContainer .responsiveLogo i {
+    color: white;
+    font-size: 15px;
+}
+.searchContainer .mapLogo i {
+    font-size: 20px;
+}
+.responsiveLogo button {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 125px;
+    width: 100%;
     height: 40px;
-    background-color:#0065FC;;
-    border-radius: 0 15px 15px 0;
+    background-color:var(--colorBlue);
+    border-radius: 10px;
     border-style: none;
-    color: white;
-    font-size: 15px;
-    font-weight: bold;
+    position: relative;
+    left: -8px;
 }
+
+
+
+
         /*Filtres*/
 .filtersContainer{
     display: flex;
