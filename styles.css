@@ -120,12 +120,20 @@ main i{
 }
 
         /*Filtres*/
+.filtersPart {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 .filtersContainer{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
+    width: 950px;
+    padding: 0px;
+    margin: 0px;
 }
 
 .f{
@@ -135,48 +143,43 @@ main i{
 }
 .eco {
     width: 180px;
-    margin: 20px;
+    margin: 10px;
+
 }
 
 .i-eco{
-    display: flex; 
-    align-items:center;
-    position: relative;
-    right: -57px;
+    position: absolute; 
+    left: -20;
 }
 .fam {
     width: 140px;
-    margin: 20px;
+    margin: 10px;
+
 }
 
 .i-fam{
-    display: flex; 
-    align-items:center;
-    position: relative;
-    right: -57px;
+    position: absolute; 
+    left: -20;
 }
 
 .rom {
-    width: 180px;
-    margin: 20px;
+    width: 160px;
+    margin: 15px;
 }
 
 .i-rom{
-    display: flex; 
-    align-items:center;
-    position: relative;
-    right: -57px;
+    position: absolute; 
+    left: -20;
 }
 .ani {
     width: 220px;
-    margin: 20px;
+    margin: 10px;
+
 }
 
 .i-ani{
-    display: flex; 
-    align-items:center;
-    position: relative;
-    right: -57px;
+    position: absolute; 
+    left: -20;
 }
 
 .filtersContainer i{
@@ -186,7 +189,7 @@ main i{
     border : solid 0.1rem none;
     border-radius: 50px;
     background-color: #DEEBFF ;
-    height: 40px;
+    height: 41px;
     width: 45px;
 }
 
@@ -195,15 +198,13 @@ main i{
     align-items: center;
     justify-content: center;
     font-size: 15px;
-    margin: 15px;
     border : #f2f2f2 solid 0.1rem;
-    border-radius: 0 30px 30px 0;
+    border-radius: 30px;
     background-color: white;
     color: var(--colorBlack);
     font-size: 15px;
     text-decoration: none;
     font-weight: bold;
-    margin-right:10px ;
     height: 38px;
 }
 
@@ -216,7 +217,9 @@ main i{
 .infoContainer{
    display: flex; 
    flex-direction:row;
-   align-items:center;}
+   align-items:center;
+   width: 100%;
+}
  
 .infoContainer i{
     display: flex; 
@@ -238,11 +241,9 @@ main i{
 /*article et aside*/
 .hotelMainContainer{
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 1em 1em;
-
 }
 
 /*article1*/
@@ -257,20 +258,21 @@ article{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    }
-
-.accommodationMrs{
-    display :flex;
-    flex-wrap :wrap;
-    justify-content: space-between;
-    align-items: center;
-    }
+}
 .titleArticle {
     display: flex;
     flex-direction: row;
     justify-content: start;
     width: 100%;
 }
+
+.accommodationMrs{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .card1 {
     display: flex;
     flex-direction: column;
@@ -286,14 +288,22 @@ article{
 
 .card1 img {
     border-radius:15px 15px 0 0; 
-    height: 115px;
+    height: 130px;
     width: 240px;
     object-fit: cover;
 }
-.textH1 {
-  height: 85px;
-  padding: 0px 5px;
-  line-height: 1px;
+
+.textH1{
+    padding-left: 10px;
+}
+.textH1 h4 {
+    padding: 0px;
+    margin: 0px;
+}
+
+.textH1 p {
+    padding:0px;
+    margin: 0px;
 }
 .card1 a {
     text-decoration: none;
@@ -348,6 +358,7 @@ aside{
     flex-direction: column;
     padding-top: 10px;
     height:508px;
+    width: 100%;
 }
 
 .titleAside{
@@ -368,23 +379,27 @@ aside{
     background-color: white;
     border-radius:15px;
     box-shadow:2px 2px 5px;
-    width: 100% ;
+    width: 345px;
     height: 145px;
-    margin-bottom: 10px;
-    padding: 3px 2px;
+    padding: 5px;
 }
-.card2 img {
+
+.ImageH2{
+    width: 35%;
+    padding: 0px;
+    margin: 0px;
+}
+.ImageH2 img{
     border-radius:15px 0 0 15px; 
+    width: 100%;
     height: 100%;
-    width: 125px;
     object-fit: cover;
 }
 
 .textH2 {
     display: flex;
     flex-direction: column;
-    justify-content:start;
-    width: 190px;
+    width: 65%;
 }
 .textH2 p {
     padding-left: 20px;
@@ -395,31 +410,35 @@ aside{
     margin: 0;
 }
 .textH2 .hotelRating{
-    padding-top: 42px;
     padding-left: 20px;
+    padding-top: 60px;
 }
-.popContainer a {
+.textH2 .hotelRatingSpe{
+    padding-left: 20px;
+    padding-top: 45px;
+    display: flex;
+}
+.card2 a {
     text-decoration: none;
     color: var(--colorBlack);
+    display: flex;
+    flex-direction: row;
 }
-
 /*article2*/
 section{
-width: 100%;
-margin-bottom: 50px;
-margin-left: 1rem;
+    width: 100%;
+    margin-bottom: 2em;
+    margin-left: 1em;
 }
-section h2{
-    margin: 1rem;
-}
-.activityContainer {
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-justify-content: space-between;
-align-items: center;
-width: 98%;
-height: 100%;
+
+.activityContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 98%;
+    height: 100%;
 }
 .activityContainer a {
     text-decoration: none;
@@ -546,38 +565,15 @@ footer a {
 }
 
 
+/********/
+/*Tablet*/
+/********/
 /*regles CSS pour tablettes ici*/
-/*les périphériques mobiles ne dépassent pas 480 px de large*/
 @media screen and (min-width: 576px) and (max-width: 1024px){
-    body {
-        background-color: orange;
-    }
-    /*.hotelMainContainer {
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content:space-between;
-        align-items: center;
-    }
-    aside {
-        width: 100%;
-        margin: 1em;
-    }
-    article {
-        width :100%;
-        margin:1em;
-    }
-    .activityContainer {
-        display: flex;
-        flex-direction: column;
-    }        */
-    /*body*/
 
-/*************/
-/*Code tablet*/
-/*************/
 /*Header*/
 .navContainer {
-   padding: 1rem;
+    padding: 1rem;
 }
 
 header nav ul{
@@ -616,514 +612,123 @@ header img{
 
         /*Filtres*/
 .filtersContainer{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
     justify-content: flex-start;
+    width: 100%;
 }
-
-.f{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-.eco {
-    width: 180px;
-    margin: 20px;
-}
-
-.i-eco{
-    display: flex; 
-    align-items:center;
-    position: relative;
-    right: -57px;
-}
-.fam {
-    width: 140px;
-    margin: 20px;
-}
-
-.i-fam{
-    display: flex; 
-    align-items:center;
-    position: relative;
-    right: -57px;
-}
-
-.rom {
-    width: 180px;
-    margin: 20px;
-}
-
-.i-rom{
-    display: flex; 
-    align-items:center;
-    position: relative;
-    right: -57px;
-}
-.ani {
-    width: 220px;
-    margin: 20px;
-}
-
-.i-ani{
-    display: flex; 
-    align-items:center;
-    position: relative;
-    right: -57px;
-}
-
-.filtersContainer i{
-    display: flex; 
-    align-items:center;
-    justify-content: center;
-    border : solid 0.1rem none;
-    border-radius: 50px;
-    background-color: #DEEBFF ;
-    height: 40px;
-    width: 45px;
-}
-
-.filtersContainer a{
-    display: flex; 
-    align-items: center;
-    justify-content: center;
-    font-size: 15px;
-    margin: 15px;
-    border : #f2f2f2 solid 0.1rem;
-    border-radius: 0 30px 30px 0;
-    background-color: white;
-    color: var(--colorBlack);
-    font-size: 15px;
-    text-decoration: none;
-    font-weight: bold;
-    margin-right:10px ;
-    height: 38px;
-}
-
-.filtersContainer a:hover {
-    color: var(--colorBlue);
-    background-color: var(--colorclearBlue);
-}
-
         /*Info*/
-.infoContainer{
-   display: flex; 
-   flex-direction:row;
-   align-items:center;}
- 
-.infoContainer i{
-    display: flex; 
-    align-items: center;
-    justify-content: center;
-    border : solid 0.1rem #F2F2F2 ;
-    border-radius: 50px;
-    height: 35px;
-    width: 35px;
-}
-.infoContainer p{
-    display: flex; 
-    align-items: center;
-    justify-content: center;
-    font-size: 15px;
-    margin: 15px;
-}
-        
+      
 /*article et aside*/
 .hotelMainContainer{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 1em 1em;
-
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
 }
 
 /*article1*/
 article{
-    background:#F2F2F2;
-    flex-wrap: wrap;
-    padding: 2em 1em;
-    border-radius: 15px ;
-    width: 63%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    }
-
+    background: none;
+    padding: 1em;
+    margin:0em;
+    width: 65%;
+}
 .accommodationMrs{
-    display :flex;
-    flex-wrap :wrap;
-    justify-content: space-between;
-    align-items: center;
-    }
-.titleArticle {
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
+    padding: 0px;
     width: 100%;
 }
+
 .card1 {
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    border-radius:15px;
-    border :none;
-    box-shadow:2px 2px 5px;
-    width:240px ;
+    width:100% ;
     height: 200px;
     margin: 10px 0px;
     padding: 5px;
 }
 
 .card1 img {
-    border-radius:15px 15px 0 0; 
-    height: 115px;
-    width: 240px;
-    object-fit: cover;
+    height: 135px;
+    width: 100%;
 }
-.textH1 {
-  height: 85px;
-  padding: 0px 5px;
-  line-height: 1px;
-}
-.card1 a {
-    text-decoration: none;
-    color: var(--colorBlack);
-}
-.linkMore a {
-    text-decoration: none;
-    color: var(--colorBlack);
-    font-size: 1rem;
-    font-weight: bold;}
-
-.linkMore{
-    flex-direction: row;
+.textH1{
     display: flex;
-    justify-content: start;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     width: 100%;
 }
         /*Etoiles*/
-.blueStars{
-    color: #0065FC;
-}
-.greyStars{
-    color: #bdbdbd;
-}
-.hotelRating{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-}
 
 /*aside, les plus populaires*/
 aside{ 
-    background:#F2F2F2;
-    width: 30%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 32px 16px 32px 16px;
-    border-radius: 15px;
+    width: 65%;
+    padding: 1em;
+    margin: 0px;
 }
 
 .popContainer{
-    display: flex;
-    align-items:center;
-    justify-content:space-between;
-    flex-wrap :wrap;
-    flex-direction: column;
-    padding-top: 10px;
-    height:508px;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
 }
 
 .titleAside{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%;
-}
-.titleAside i {
-    font-size: 25px;
+    width: 100%;
 }
 
 .card2 {
-    display: flex;
-    flex-direction:row;
-    justify-content: center;
-    background-color: white;
-    border-radius:15px;
-    box-shadow:2px 2px 5px;
     width: 100% ;
-    height: 145px;
-    margin-bottom: 10px;
-    padding: 3px 2px;
+    margin: 0px;
+    padding: 0px;
+    height: 143px;
 }
-.card2 img {
-    border-radius:15px 0 0 15px; 
-    height: 100%;
-    width: 125px;
-    object-fit: cover;
+
+.ImageH2 img{
+    width: 100%;
+    padding: 0px;
 }
 
 .textH2 {
-    display: flex;
-    flex-direction: column;
-    justify-content:start;
-    width: 190px;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
 }
-.textH2 p {
-    padding-left: 20px;
-    margin: 0;
-}
-.textH2 h4 {
-    padding: 10px 0px 10px 20px;
-    margin: 0;
-}
+
 .textH2 .hotelRating{
-    padding-top: 42px;
-    padding-left: 20px;
+    padding-top: 45px;
 }
-.popContainer a {
-    text-decoration: none;
-    color: var(--colorBlack);
+.textH2 .hotelRatingSpe{
+    padding-top: 45px;
 }
 
 /*article2*/
-section{
-width: 100%;
-margin-bottom: 50px;
-margin-left: 1rem;
-}
-section h2{
-    margin: 1rem;
-}
+
+
 .activityContainer {
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-justify-content: space-between;
-align-items: center;
-width: 98%;
-height: 100%;
-}
-.activityContainer a {
-    text-decoration: none;
-    color: var(--colorBlack);
+    width: 65%;
 }
 
 .highBlock {
-    width: 300px;
-    height: 450px;
-    border-radius: 15px;
-    box-shadow: 2px 2px 5px ;
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    flex-wrap: wrap;
-}
-#cardPort img{
-    border-radius: 15px 15px 0 0;
-    width: 100%;
-    height: 410px;
-    object-fit: cover;
+    margin-bottom: 2.5em;
 }
 
-#cardParc img{
-    border-radius: 15px 15px 0 0;
-    width: 100%;
-    height: 410px;
-    object-fit: cover;
-}
 .smallBlock {
-display: flex;
-flex-direction: column;
-height: 450px;
-width: 300px;
-flex-wrap: wrap;
-justify-content:space-between;
-}
-#cardPomegues {
-    width: 300px;
-    height: 240px;
-    border-radius: 15px;
-    box-shadow: 2px 2px 5px ;
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items: flex-start;
-}
-#cardPomegues img {
-    border-radius: 15px 15px 0 0;
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-#cardFrioul {
-    width: 300px;
-    height: 170px;
-    border-radius: 15px;
-    box-shadow: 2px 2px 5px ;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items:flex-start
+    margin-bottom: 2.5em;
 }
 
-#cardFrioul img {
-    border-radius: 15px 15px 0 0;
-    width: 100%;
-    height: 130px;
-    object-fit: cover;
-}
-#cardNotredame {
-    width: 300px;
-    height: 200px;
-    border-radius: 15px;
-    box-shadow: 2px 2px 5px ;
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-}
-#cardNotredame img {
-    border-radius: 15px 15px 0 0;
-    width: 100%;
-    height: 160px;
-    object-fit: cover;
-}
-
-#cardLongchamp {
-    width: 300px;
-    height: 210px;
-    border-radius: 15px;
-    box-shadow: 2px 2px 5px ;
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-}
-#cardLongchamp img {
-    border-radius: 15px 15px 0 0;
-    width: 100%;
-    height: 170px;
-    object-fit: cover;
-}
 
 section h4 {
     padding: 0;
     margin:0.7em 0 0.7em 1.3em;
 }
 /*footer*/
-footer{
-    background-color: #f2f2f2;
-    padding: 2em 1em;
-}
 
-.footerContainer {
-    display: flex;
-   flex-direction: row;
-   justify-content: space-between;
-   width: 70%;
-}
-
-footer a {
-   text-decoration: none;
-   color: black;
-   font-size: small;
-}
 
 }
-/*regles CSS pour mobiles ici*/
+
+/**************/
+/*Mobile Phone*/
+/**************/
+/*regles CSS pour téléphones portables ici*/
 @media screen and (max-width: 575px) {
- body {
-     background-color: greenyellow;
- }
- /*
-/*Partie Hébergement
-    .hotelMainContainer {
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content:space-between;
-        align-items: center;
-    }
-   
-    article {
-        width :100%;
-        background-color: var(--colorWhite);
-    }
-
-    .card1 {
-        width:100% ;
-        height: 200px;
-
-    }
-    .card1 img {
-        border-radius:15px 15px 0 0; 
-        height: 115px;
-        width: 100%;
-        object-fit: cover;
-    }
-
-    aside {
-        width: 100%;
-        margin: 1em;
-    }
-    .card2 {
-        width:100% ;
-        height: 145px;
-    }
-    .card2 img {
-        height: 100%;
-        width: 125px;
-    }
-Partie Activités
-    section{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: violet;
-        }
-    .activityContainer{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 95%;
-        background-color:yellow;
-    }
-   
-    .highBlock {
-        width: 98%;
-        height: 25%;
-        align-items: center;
-        border: solid;
-    }
-
-    .cardActivities {
-            width: 100%;
-            height: 200px;
-            margin:0;
-            border: solid;
-    }
-    .cardActivities img {
-        width: 100%;
-        height: 80% ;
-        margin: 0;
-        }
-*/
-/*************/
-/*Mobile*/
-/********/
 
 /*Header*/
 .navContainer {
@@ -1135,7 +740,8 @@ header nav ul{
     width: 100% ;
     padding:0;
 }
-.link {
+
+.link{
     width: 100%;
     order:3;
 }
@@ -1156,6 +762,7 @@ header nav ul{
     border-bottom-style: solid;
     border-width : 0.2em; 
 }
+
 .navRegistration a:hover{
     border: none;
 }
@@ -1168,9 +775,11 @@ header nav ul{
 .navRegistration{
     order:2;
 }
+
 .navAccommodation{
     width: 50%;
 }
+
 .navActivities{
     width: 50%;
 }
@@ -1182,19 +791,24 @@ header nav ul{
 .searchContainer{
     width: 300px;
 }
+
 .searchContainer button {
     display: none;
 }
+
 .responsiveLogo{
     width: 40px;
 }
+
 .searchContainer .responsiveLogo i {
-    color: white;
+    color:var(--colorWhite);
     font-size: 15px;
 }
+
 .searchContainer .mapLogo i {
     font-size: 20px;
 }
+
 .responsiveLogo button {
     display: flex;
     align-items: center;
@@ -1208,434 +822,161 @@ header nav ul{
     left: -8px;
 }
 
-
-
-
         /*Filtres*/
+.filtersPart {
+    display: flex;
+    flex-direction: column;
+}
+
 .filtersContainer{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
     justify-content: flex-start;
-}
-
-.f{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-.eco {
-    width: 180px;
-    margin: 20px;
-}
-
-.i-eco{
-    display: flex; 
-    align-items:center;
-    position: relative;
-    right: -57px;
-}
-.fam {
-    width: 140px;
-    margin: 20px;
-}
-
-.i-fam{
-    display: flex; 
-    align-items:center;
-    position: relative;
-    right: -57px;
-}
-
-.rom {
-    width: 180px;
-    margin: 20px;
-}
-
-.i-rom{
-    display: flex; 
-    align-items:center;
-    position: relative;
-    right: -57px;
-}
-.ani {
-    width: 220px;
-    margin: 20px;
-}
-
-.i-ani{
-    display: flex; 
-    align-items:center;
-    position: relative;
-    right: -57px;
-}
-
-.filtersContainer i{
-    display: flex; 
-    align-items:center;
-    justify-content: center;
-    border : solid 0.1rem none;
-    border-radius: 50px;
-    background-color: #DEEBFF ;
-    height: 40px;
-    width: 45px;
-}
-
-.filtersContainer a{
-    display: flex; 
-    align-items: center;
-    justify-content: center;
-    font-size: 15px;
-    margin: 15px;
-    border : #f2f2f2 solid 0.1rem;
-    border-radius: 0 30px 30px 0;
-    background-color: white;
-    color: var(--colorBlack);
-    font-size: 15px;
-    text-decoration: none;
-    font-weight: bold;
-    margin-right:10px ;
-    height: 38px;
-}
-
-.filtersContainer a:hover {
-    color: var(--colorBlue);
-    background-color: var(--colorclearBlue);
+    width: 100%;
 }
 
         /*Info*/
-.infoContainer{
-   display: flex; 
-   flex-direction:row;
-   align-items:center;}
- 
-.infoContainer i{
-    display: flex; 
-    align-items: center;
-    justify-content: center;
-    border : solid 0.1rem #F2F2F2 ;
-    border-radius: 50px;
-    height: 35px;
-    width: 35px;
-}
-.infoContainer p{
-    display: flex; 
-    align-items: center;
-    justify-content: center;
-    font-size: 15px;
-    margin: 15px;
-}
+
         
 /*article et aside*/
 .hotelMainContainer{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 1em 1em;
-
+    flex-direction: column-reverse;
+    padding: 0px;
 }
 
 /*article1*/
 article{
-    background:#F2F2F2;
-    flex-wrap: wrap;
-    padding: 2em 1em;
-    border-radius: 15px ;
-    width: 63%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    }
-
+    background: none;
+    padding: 1em;
+    margin:0em;
+    width: 92%;
+}
 .accommodationMrs{
-    display :flex;
-    flex-wrap :wrap;
-    justify-content: space-between;
-    align-items: center;
-    }
-.titleArticle {
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
+    padding: 0px;
     width: 100%;
 }
+
 .card1 {
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    border-radius:15px;
-    border :none;
-    box-shadow:2px 2px 5px;
-    width:240px ;
+    width:100% ;
     height: 200px;
     margin: 10px 0px;
     padding: 5px;
 }
 
 .card1 img {
-    border-radius:15px 15px 0 0; 
-    height: 115px;
-    width: 240px;
-    object-fit: cover;
-}
-.textH1 {
-  height: 85px;
-  padding: 0px 5px;
-  line-height: 1px;
-}
-.card1 a {
-    text-decoration: none;
-    color: var(--colorBlack);
-}
-.linkMore a {
-    text-decoration: none;
-    color: var(--colorBlack);
-    font-size: 1rem;
-    font-weight: bold;}
-
-.linkMore{
-    flex-direction: row;
-    display: flex;
-    justify-content: start;
-    align-items: center;
+    height: 135px;
     width: 100%;
 }
         /*Etoiles*/
-.blueStars{
-    color: #0065FC;
-}
-.greyStars{
-    color: #bdbdbd;
-}
-.hotelRating{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-}
 
 /*aside, les plus populaires*/
 aside{ 
-    background:#F2F2F2;
-    width: 30%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 32px 16px 32px 16px;
-    border-radius: 15px;
+    width: 92%;
+    padding: 1em;
+    margin: 0px;
 }
 
 .popContainer{
-    display: flex;
-    align-items:center;
-    justify-content:space-between;
-    flex-wrap :wrap;
-    flex-direction: column;
-    padding-top: 10px;
-    height:508px;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
 }
 
 .titleAside{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%;
-}
-.titleAside i {
-    font-size: 25px;
+    width: 100%;
 }
 
 .card2 {
-    display: flex;
-    flex-direction:row;
-    justify-content: center;
-    background-color: white;
-    border-radius:15px;
-    box-shadow:2px 2px 5px;
     width: 100% ;
-    height: 145px;
-    margin-bottom: 10px;
-    padding: 3px 2px;
+    margin: 0px;
+    padding: 0px;
+    height: 143px;
 }
-.card2 img {
-    border-radius:15px 0 0 15px; 
-    height: 100%;
-    width: 125px;
-    object-fit: cover;
+
+.ImageH2 img{
+    width: 100%;
+    padding: 0px;
 }
 
 .textH2 {
-    display: flex;
-    flex-direction: column;
-    justify-content:start;
     width: 190px;
 }
-.textH2 p {
-    padding-left: 20px;
-    margin: 0;
-}
-.textH2 h4 {
-    padding: 10px 0px 10px 20px;
-    margin: 0;
-}
+
 .textH2 .hotelRating{
-    padding-top: 42px;
-    padding-left: 20px;
+    padding-top: 45px;
 }
-.popContainer a {
-    text-decoration: none;
-    color: var(--colorBlack);
+.textH2 .hotelRatingSpe{
+    padding-top: 45px;
 }
 
 /*article2*/
-section{
-width: 100%;
-margin-bottom: 50px;
-margin-left: 1rem;
-}
-section h2{
-    margin: 1rem;
-}
+
 .activityContainer {
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-justify-content: space-between;
-align-items: center;
-width: 98%;
-height: 100%;
-}
-.activityContainer a {
-    text-decoration: none;
-    color: var(--colorBlack);
+    width: 92%;
 }
 
 .highBlock {
-    width: 300px;
-    height: 450px;
-    border-radius: 15px;
-    box-shadow: 2px 2px 5px ;
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    flex-wrap: wrap;
-}
-#cardPort img{
-    border-radius: 15px 15px 0 0;
     width: 100%;
-    height: 410px;
-    object-fit: cover;
+    height: 200px;
+    margin-bottom: 1em;
+}
+
+#cardPort img{
+    height: 158px;
 }
 
 #cardParc img{
-    border-radius: 15px 15px 0 0;
-    width: 100%;
-    height: 410px;
-    object-fit: cover;
+    height: 158px;
 }
 .smallBlock {
-display: flex;
-flex-direction: column;
-height: 450px;
-width: 300px;
-flex-wrap: wrap;
-justify-content:space-between;
+margin-bottom: 1em;
+height: 416px;
+width: 100%;
 }
+
 #cardPomegues {
-    width: 300px;
-    height: 240px;
-    border-radius: 15px;
-    box-shadow: 2px 2px 5px ;
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items: flex-start;
-}
-#cardPomegues img {
-    border-radius: 15px 15px 0 0;
     width: 100%;
     height: 200px;
-    object-fit: cover;
 }
+
+#cardPomegues img {
+    width: 100%;
+    height: 158px;   
+}
+
 #cardFrioul {
-    width: 300px;
-    height: 170px;
-    border-radius: 15px;
-    box-shadow: 2px 2px 5px ;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items:flex-start
+    width: 100%;
+    height: 200px;
 }
 
 #cardFrioul img {
-    border-radius: 15px 15px 0 0;
     width: 100%;
-    height: 130px;
-    object-fit: cover;
+    height: 158px;
 }
 #cardNotredame {
-    width: 300px;
+    width: 100%;
     height: 200px;
-    border-radius: 15px;
-    box-shadow: 2px 2px 5px ;
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
 }
 #cardNotredame img {
-    border-radius: 15px 15px 0 0;
     width: 100%;
-    height: 160px;
-    object-fit: cover;
+    height: 158px;
 }
 
 #cardLongchamp {
-    width: 300px;
-    height: 210px;
-    border-radius: 15px;
-    box-shadow: 2px 2px 5px ;
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
+    width: 100%;
+    height: 200px;
 }
 #cardLongchamp img {
-    border-radius: 15px 15px 0 0;
     width: 100%;
-    height: 170px;
-    object-fit: cover;
+    height: 158px;
 }
 
-section h4 {
-    padding: 0;
-    margin:0.7em 0 0.7em 1.3em;
-}
+
 /*footer*/
-footer{
-    background-color: #f2f2f2;
-    padding: 2em 1em;
-}
+
 
 .footerContainer {
-    display: flex;
-   flex-direction: row;
-   justify-content: space-between;
-   width: 70%;
+   flex-direction: column;
+   width: 100%;
 }
 
-footer a {
-   text-decoration: none;
-   color: black;
-   font-size: small;
 }
-
-    }
     
