@@ -426,10 +426,20 @@ aside{
     flex-direction: row;
 }
 /*article2*/
-section{
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    margin-bottom: 2em;
-    margin-left: 1em;
+}
+
+.activitiesMainContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1em;
+    width: 100%;
 }
 
 .activityContainer{
@@ -438,9 +448,10 @@ section{
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    width: 98%;
+    width: 100%;
     height: 100%;
 }
+
 .activityContainer a {
     text-decoration: none;
     color: var(--colorBlack);
@@ -608,7 +619,6 @@ header img{
     width: 100%;
 }
 
-
 /*Main*/
 
         /*Filtres*/
@@ -631,7 +641,7 @@ article{
     background: none;
     padding: 1em;
     margin:0em;
-    width: 65%;
+    width: 50%;
 }
 .accommodationMrs{
     padding: 0px;
@@ -660,7 +670,7 @@ article{
 
 /*aside, les plus populaires*/
 aside{ 
-    width: 65%;
+    width: 50%;
     padding: 1em;
     margin: 0px;
 }
@@ -688,7 +698,7 @@ aside{
 }
 
 .textH2 {
-    width: 300px;
+    width: 100%;
     justify-content: center;
     align-items: center;
 }
@@ -702,17 +712,64 @@ aside{
 
 /*article2*/
 
-
-.activityContainer {
-    width: 65%;
+.activitiesMainContainer{
+    width: 50%;
+    align-items: center;
 }
-
 .highBlock {
-    margin-bottom: 2.5em;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 1em;
 }
 
+#cardPort img{
+    height: 158px;
+}
+
+#cardParc img{
+    height: 158px;
+}
 .smallBlock {
-    margin-bottom: 2.5em;
+    margin-bottom: 1em;
+    height: 416px;
+    width: 100%;
+}
+
+#cardPomegues {
+    width: 100%;
+    height: 200px;
+}
+
+#cardPomegues img {
+    width: 100%;
+    height: 158px;   
+}
+
+#cardFrioul {
+    width: 100%;
+    height: 200px;
+}
+
+#cardFrioul img {
+    width: 100%;
+    height: 158px;
+}
+#cardNotredame {
+    width: 100%;
+    height: 200px;
+}
+#cardNotredame img {
+    width: 100%;
+    height: 158px;
+}
+
+#cardLongchamp {
+    width: 100%;
+    height: 200px;
+}
+#cardLongchamp img {
+    width: 100%;
+    height: 158px;
 }
 
 
@@ -898,7 +955,7 @@ aside{
 }
 
 .textH2 {
-    width: 190px;
+    width: 100%;
 }
 
 .textH2 .hotelRating{
@@ -909,10 +966,6 @@ aside{
 }
 
 /*article2*/
-
-.activityContainer {
-    width: 92%;
-}
 
 .highBlock {
     width: 100%;
