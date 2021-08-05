@@ -19,19 +19,23 @@
 }
 
 /*body*/
-.mainContainer {
-    margin: 0px;
+body{
+    margin: auto;
     padding: 0px;
+    max-width: 1440px;
+}
+
+.mainContainer {
     display: flex;
     flex-direction: column;
 }
 
 /*Header*/
 .navContainer {
-    display :flex;
+    display: flex;
     flex-wrap: wrap;
     align-items: center;
-    padding: 2em 1em;
+    padding: 0.5em 1em;
     width: auto;
 }
 
@@ -242,9 +246,9 @@ main i{
 /*article et aside*/
 .hotelMainContainer{
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 1em 1em;
+    width: 100%;
 }
 
 /*article1*/
@@ -253,13 +257,14 @@ article{
     flex-wrap: wrap;
     padding: 2em 1em;
     border-radius: 15px ;
-    width: 63%;
+    width: 60%;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
+
 .titleArticle {
     display: flex;
     flex-direction: row;
@@ -306,15 +311,18 @@ article{
     padding:0px;
     margin: 0px;
 }
+
 .card1 a {
     text-decoration: none;
     color: var(--colorBlack);
 }
+
 .linkMore a {
     text-decoration: none;
     color: var(--colorBlack);
     font-size: 1em;
-    font-weight: bold;}
+    font-weight: bold;
+}
 
 .linkMore{
     flex-direction: row;
@@ -339,16 +347,27 @@ article{
 /*aside, les plus populaires*/
 aside{ 
     background: var(--colorGrey);
+    flex-wrap: wrap;
+    padding: 2em 1em;
+    border-radius: 15px;
     width: 30%;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.titleAside{
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 32px 16px 32px 16px;
-    border-radius: 15px;
+    align-items: center;
+    width: 90%;
+}
+
+.titleAside i {
+    font-size: 25px;
 }
 
 .popContainer{
@@ -359,66 +378,51 @@ aside{
     flex-direction: column;
     padding-top: 10px;
     height:508px;
-    width: 100%;
-}
-
-.titleAside{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
     width: 90%;
-}
-.titleAside i {
-    font-size: 25px;
 }
 
 .card2 {
     display: flex;
     flex-direction:row;
-    justify-content: center;
     background-color: var(--colorWhite);
     border-radius:15px;
+    border: none;
     box-shadow:2px 2px 5px;
-    width: 345px;
+    width: 100%;
+    margin: auto;
     height: 145px;
     padding: 5px;
 }
 
-.ImageH2{
-    width: 35%;
-    padding: 0px;
-    margin: 0px;
-}
+
 .ImageH2 img{
+    display: flex;
+    justify-content: right;
     border-radius:15px 0 0 15px; 
-    width: 100%;
+    width: 125px;
     height: 100%;
+    margin: 0em;
+    padding:0em;
     object-fit: cover;
 }
 
 .textH2 {
+    padding: 0.5em 1em 1em 1em;
     display: flex;
     flex-direction: column;
-    width: 65%;
+    justify-content: space-between;
 }
+
 .textH2 p {
-    padding-left: 20px;
-    margin: 0;
+    margin: 5px 0px 5px 0px;
+    padding: 0px;
 }
+
 .textH2 h4 {
-    padding: 10px 0px 10px 20px;
-    margin: 0;
+    margin: 0px;
+    padding: 0px;
 }
-.textH2 .hotelRating{
-    padding-left: 20px;
-    padding-top: 60px;
-}
-.textH2 .hotelRatingSpe{
-    padding-left: 20px;
-    padding-top: 45px;
-    display: flex;
-}
+
 .card2 a {
     text-decoration: none;
     color: var(--colorBlack);
@@ -481,12 +485,12 @@ section {
     object-fit: cover;
 }
 .smallBlock {
-display: flex;
-flex-direction: column;
-height: 450px;
-width: 300px;
-flex-wrap: wrap;
-justify-content:space-between;
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+    width: 300px;
+    flex-wrap: wrap;
+    justify-content:space-between;
 }
 #cardPomegues {
     width: 300px;
@@ -588,36 +592,14 @@ footer a {
     padding: 1em;
 }
 
-header nav ul{
-    display :flex;
-    flex-wrap: wrap;
-    align-items: center; 
-    list-style-type: none;
-}
 .link {
-    display:flex;
-    justify-content: flex-end;
     width: 50%;
 }
 
 header a{
     padding: 15px;
-    text-decoration: none;
-    color: var(--colorBlack);
-    font-weight: bold;
 }
 
-header a:hover{
-    color: var(--colorBlue);
-    border-top-style : solid;
-    border-width : 0.1em; 
-}
-.logo{
-    width: 160px;
-}
-header img{
-    width: 100%;
-}
 
 /*Main*/
 
@@ -649,10 +631,7 @@ article{
 }
 
 .card1 {
-    width:100% ;
-    height: 200px;
-    margin: 10px 0px;
-    padding: 5px;
+    width: 100%;
 }
 
 .card1 img {
@@ -665,8 +644,10 @@ article{
     justify-content: center;
     align-items: center;
     width: 100%;
+    padding-left: 0px;
 }
         /*Etoiles*/
+
 
 /*aside, les plus populaires*/
 aside{ 
@@ -679,6 +660,7 @@ aside{
     padding: 0px;
     margin: 0px;
     width: 100%;
+
 }
 
 .titleAside{
@@ -686,28 +668,19 @@ aside{
 }
 
 .card2 {
-    width: 100% ;
-    margin: 0px;
+    margin: auto;
     padding: 0px;
-    height: 143px;
+    height: 145px;
 }
 
 .ImageH2 img{
-    width: 100%;
-    padding: 0px;
+    width: 150PX;
 }
-
+.textH2 p {
+    margin-top: 5px;
+}
 .textH2 {
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-}
-
-.textH2 .hotelRating{
-    padding-top: 45px;
-}
-.textH2 .hotelRatingSpe{
-    padding-top: 45px;
+    padding: 0.3em;
 }
 
 /*article2*/
@@ -716,6 +689,7 @@ aside{
     width: 50%;
     align-items: center;
 }
+
 .highBlock {
     width: 100%;
     height: 200px;
@@ -772,13 +746,11 @@ aside{
     height: 158px;
 }
 
-
 section h4 {
     padding: 0;
-    margin:0.7em 0 0.7em 1.3em;
+    margin:0.7em 0 0.7em 2em;
 }
 /*footer*/
-
 
 }
 
@@ -881,7 +853,6 @@ header nav ul{
 
         /*Filtres*/
 .filtersPart {
-    display: flex;
     flex-direction: column;
 }
 
@@ -891,8 +862,7 @@ header nav ul{
 }
 
         /*Info*/
-
-        
+       
 /*article et aside*/
 .hotelMainContainer{
     flex-direction: column-reverse;
@@ -912,9 +882,10 @@ article{
 }
 
 .card1 {
-    width:100% ;
+    width:90% ;
     height: 200px;
-    margin: 10px 0px;
+    margin: auto;
+    margin-bottom: 20px;
     padding: 5px;
 }
 
@@ -942,32 +913,26 @@ aside{
 }
 
 .card2 {
-    width: 100% ;
-    margin: 0px;
+    width: 90% ;
+    margin: auto;
     padding: 0px;
     height: 143px;
 }
-
-.ImageH2 img{
-    width: 100%;
-    padding: 0px;
-}
-
 .textH2 {
-    width: 100%;
+    padding: 1em;
 }
+.textH2 p {
+    margin-top: 0px;
+    margin-bottom: 0px ;
+}
+/*activity*/
 
-.textH2 .hotelRating{
-    padding-top: 35px;
+.activityContainer{
+    justify-content: center;
 }
-.textH2 .hotelRatingSpe{
-    padding-top: 35px;
-}
-
-/*article2*/
 
 .highBlock {
-    width: 100%;
+    width: 90%;
     height: 200px;
     margin-bottom: 1em;
 }
@@ -982,7 +947,7 @@ aside{
 .smallBlock {
 margin-bottom: 1em;
 height: 416px;
-width: 100%;
+width: 90%;
 }
 
 #cardPomegues {
