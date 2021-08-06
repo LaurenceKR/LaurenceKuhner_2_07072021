@@ -70,6 +70,11 @@ header img{
     width: 100%;
 }
 
+.navRegistration a {
+    color: var(--colorBlue);
+    font-weight: bold;    
+}
+
 /*Main*/
 main {
     margin: 1em;
