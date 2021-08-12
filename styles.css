@@ -290,7 +290,7 @@ article{
     background-color: var(--colorWhite);
     border-radius:15px;
     border :none;
-    box-shadow:2px 2px 5px;
+    box-shadow:1px 1px 2px;
     width:240px ;
     height: 200px;
     margin: 10px 0px;
@@ -392,7 +392,7 @@ aside{
     background-color: var(--colorWhite);
     border-radius:15px;
     border: none;
-    box-shadow:2px 2px 5px;
+    box-shadow:1px 1px 2px;
     width: 100%;
     margin: auto;
     height: 145px;
@@ -470,7 +470,7 @@ section {
     width: 300px;
     height: 450px;
     border-radius: 15px;
-    box-shadow: 2px 2px 5px ;
+    box-shadow:1px 1px 2px;
     display: flex;
     flex-direction: column;
     justify-content:center;
@@ -501,7 +501,7 @@ section {
     width: 300px;
     height: 240px;
     border-radius: 15px;
-    box-shadow: 2px 2px 5px ;
+    box-shadow:1px 1px 2px;
     display: flex;
     flex-direction: column;
     justify-content:center;
@@ -517,7 +517,7 @@ section {
     width: 300px;
     height: 170px;
     border-radius: 15px;
-    box-shadow: 2px 2px 5px ;
+    box-shadow:1px 1px 2px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -534,7 +534,7 @@ section {
     width: 300px;
     height: 200px;
     border-radius: 15px;
-    box-shadow: 2px 2px 5px ;
+    box-shadow:1px 1px 2px;
     display: flex;
     flex-direction: column;
     justify-content:center;
@@ -550,7 +550,7 @@ section {
     width: 300px;
     height: 210px;
     border-radius: 15px;
-    box-shadow: 2px 2px 5px ;
+    box-shadow:1px 1px 2px;
     display: flex;
     flex-direction: column;
     justify-content:center;
