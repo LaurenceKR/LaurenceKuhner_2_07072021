@@ -1,8 +1,8 @@
 # LaurenceKuhner_2_07072021
 Création du site Reservia - Projet Partie 2
 
-Reservia, est une petite entreprise proposant un outil de planification de vacances. 
-Leur site permet aux usagers de trouver des hébergements et des activités dans la ville de leur choix. 
+Reservia, est une petite entreprise proposant un outil de planification de vacances.
+Leur site permet aux usagers de trouver des hébergements et des activités dans la ville de leur choix.
 Les hébergements peuvent également être filtrés par thématique, par exemple leur budget ou leur ambiance.
 
 Fonctionnalités
@@ -15,8 +15,13 @@ Dans le menu, les liens “Hébergements” et “Activités” sont des ancres 
 
 Contraintes techniques
 
-Deux maquettes : l’une desktop et l’autre mobile. Le site devra également être adapté aux tablettes. 
+Deux maquettes : l’une desktop et l’autre mobile. Le site devra également être adapté aux tablettes.
 Choix de la taille des images.
 Les icônes proviennent de la bibliothèque Font Awesome. Les couleurs de la charte sont le bleu #0065FC, et sa version plus claire #DEEBFF ainsi que le gris pour le fond #F2F2F2.
 La police du site est Raleway.
+
+Complete documentation is available at [Mon repository](https://github.com/LaurenceKR/LaurenceKuhner_2_07072021).
+
+![Image](https://github.com/hello-challenger/markdown/blob/main/image_web/Laurence_P2_reservia.png)
+
 
